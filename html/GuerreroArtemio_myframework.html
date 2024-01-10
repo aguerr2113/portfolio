@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/GuerreroArtemio_styles.css">
+    <script src="https://kit.fontawesome.com/014d0c931b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&  display=swap" rel="stylesheet">
+    <title>AG Designs</title>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <div id="navbar">
+                <nav>
+                    <img src="../images/Borcelle (1).png" class="logo" alt="">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>                
+                </nav>
+            </div>
+
+            <div id="header-text">
+                <p>AG Tech Agency</p>
+                <h1>Hi, I'm <span>Art</span><br>I am a web developer<br>based out of <span>Austin Tx</span>.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div id="container">
+            <div id="row">
+                <div id="about-col-1">
+                    <img src="../images/pic.png" alt="">
+                </div>
+                <div id="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am currently a Computer Science student at Austin Community College.Before this I worked in construction for 10 years. <br> I worked my way up from being an unskilled laborer to a machine operator. I made the decision to leave the industry and pursue a career in web development. After a few months of doing some online learning I took the plunge by quiting my job and moving to Austin.  <br>Currently I work as a route analyst for a beer distribution company, while I go to school.</p>
+                    <p>I've been playing around with different stacks and frameworks for a few years now, I've become a “Hello World” expert. So, I'm kind of a big deal.</p>
+    
+                    <div id="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python</span><br>
+                                <li>Object-Oriented Programming (OOP)</li>
+                                <li>Data Structures</li>
+                                <li>Data Manipulation and Analysis</li>
+                                <li>API Integration</li>
+                                <li>Flask</li>
+                                <li>Django</li>
+
+                            </li>
+                            <li><span>Javascript</span><br>
+                                <li>Object-Oriented Programming (OOP)</li>
+                                <li>Form Handling</li>
+                                <li>API Requests</li>
+                                <li>AJAX</li>
+                            </li>
+                            <li><span>SQL</span><br>
+                                <li>MYSQL</li>
+                                <li>psql</li>
+                                <li>sqlite</li>
+                                <li>Create and manage Databases</li>
+                                <li>Able to write complex SQL join queries across multiple tables</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>6/1/2023 - Present</span><br>Route Account Analyst</li>
+                            <li><span>2015-2022</span><br>Machine Operator</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>Austin Community College:Computer Science</li>
+                            <li><span>2022</span><br>Software Engineering Career Track Prep Course</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div id="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae perspiciatis delectus aut qui cupiditate iure saepe vitae illum asperiores distinctio doloremque a, error repellendus, optio ipsam reprehenderit neque? Quis!</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae perspiciatis delectus aut qui cupiditate iure saepe vitae illum asperiores distinctio doloremque a, error repellendus, optio ipsam reprehenderit neque? Quis!</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae perspiciatis delectus aut qui cupiditate iure saepe vitae illum asperiores distinctio doloremque a, error repellendus, optio ipsam reprehenderit neque? Quis!</p>
+                </div> 
+            </div>
+        </div>
+    <div id="portfolio">
+        <div id="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="../images/mobilePanini.png" alt="">
+                    <div class="layered">
+                        <h3>webpage</h3>
+                        <p>Discription:this is a webpage</p>
+                        <a href="../html/mobilepanini.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/todoapp.png" alt="">
+                    <div class="layered">
+                        <h3>web app</h3>
+                        <p>Discription:this is a python todo webapp</p>
+                        <a href="../Link Reference/python_todo.mp4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../images/app_dev.png" alt="">
+                    <div class="layered">
+                        <h3>webpage</h3>
+                        <p>Discription:this is a webpage</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/aguerr2113" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div id="container">
+            <div id="row">
+                <div id="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>aguerr0311@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>555-555-5555</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/artemio-guerrero-06506019b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/aguerr2113"><i class="fa-brands fa-github"></i></a>  
+                    </div>
+                    <a href="../FinalProject4.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                
+                <div id="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message..."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> AG Designs </p>
+        </div>
+    </div>
+    <script src="../js/app.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzd2L9ExXW2YTgfHBQ1KQSCtPJ1A-qKSTP2uoNhR1KlEMSqBfCW39tLK7H14q77JCWQPw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
